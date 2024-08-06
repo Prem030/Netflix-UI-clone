@@ -150,8 +150,7 @@ form {
     font-family: Netflix Sans;
 }
 
-.inner-box
- {
+.inner-box {
     display: flex;
     flex-direction: row;
 
@@ -206,11 +205,33 @@ form {
 
 }
 
-.card{
+.right1 {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+}
+
+.right1 .img2 {
+    z-index: 3;
+    width: 100%;
+}
+
+.right1 .video2 {
+    position: absolute;
+    width: 65%;
+    margin-top: 30px;
+
+}
+
+.card {
     display: flex;
     flex-direction: row;
     border: 2px solid white;
-    position: absolute;;
+    position: absolute;
+    ;
     z-index: 4;
     width: 65%;
     justify-content: start;
@@ -224,7 +245,7 @@ form {
 
 
 
-.card img{
+.card img {
     width: 60px;
     height: auto;
     margin: 0;
@@ -232,18 +253,18 @@ form {
     margin-left: .5rem;
 }
 
-.FAQ{
+.FAQ {
     color: white;
     padding: 5rem 0rem;
 }
 
-.faq-container{
+.faq-container {
     width: 69%;
     margin: auto;
-    
+
 }
 
-.faq-container h2{
+.faq-container h2 {
     font-size: 3rem;
     font-family: Netflix Sans;
     font-weight: 900;
@@ -262,15 +283,15 @@ form {
 
 }
 
-.last-question{
+.last-question {
     margin-bottom: 3rem;
 }
 
-.questions:hover{
+.questions:hover {
     background-color: #414141;
 }
 
-.faq-email p{
+.faq-email p {
     font-size: 1.3rem;
     font-family: Netflix Sans;
     color: white;
@@ -290,8 +311,7 @@ form {
         width: 100%;
     }
 
-    .inner-box
-     {
+    .inner-box {
         width: 96%;
         margin: auto;
     }
@@ -304,7 +324,7 @@ form {
         width: 50%;
     }
 
-    .faq-container{
+    .faq-container {
         width: 95%;
         margin: auto;
     }
@@ -315,9 +335,11 @@ form {
     header {
         height: 57vh;
     }
-    .box{
+
+    .box {
         height: 57vh;
     }
+
     .logo {
         width: 100px;
     }
@@ -341,76 +363,86 @@ form {
     .email {
         width: 350px;
     }
-    .inner-box{
+
+    .inner-box {
         width: 710px;
         flex-direction: column;
         margin: auto;
         text-align: center;
-        
+
     }
 
-    .one{
+    .one {
         flex-direction: column-reverse;
     }
 
-    .left{
+    .left {
         width: 100%;
 
     }
 
-    .container h2{
+    .container h2 {
         font-size: 2rem;
     }
 
-    .container p{
+    .container p {
         font-size: 1rem;
     }
 
-    .right{
+    .right {
         width: 100%;
     }
-    
-    .right img{
+
+    .right img {
         width: 670px;
         margin: auto;
     }
 
-    .card{
+    .card {
         width: 60%;
 
     }
-    .card img{
+
+    .card img {
         width: 60px;
         margin: 0;
         margin-right: 1rem;
         margin-left: .5rem;
     }
 
-    .faq-container h2{
+    .faq-container h2 {
         font-size: 2rem;
-        
+
     }
-    
-.questions {
-    display: flex;
-    justify-content: space-between;
-    font-family: Netflix Sans;
-    padding: 1rem 2rem;
-    
-    font-size: 1rem;
+
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        font-family: Netflix Sans;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .right1 {
+        justify-content: center;
+        align-items: start;
+        margin: auto;
+        width: 100%;
+    }
+    .right1 .img2{
+        width: 100%;
+    }
 
 }
-    
-}
 
 
 
-@media (max-width:800px){
-    .inner-box{
+@media (max-width:800px) {
+    .inner-box {
         width: 95%;
         margin: auto;
     }
-    
+
 }
 
 
@@ -441,14 +473,16 @@ form {
 
     }
 
-    .right img{
+    .right img {
         width: 100%;
     }
-    .card{
+
+    .card {
         width: 60%;
 
     }
-    .card img{
+
+    .card img {
         width: 60px;
         margin: 0;
         margin-right: 1rem;
@@ -479,11 +513,13 @@ form {
     .get-started-btn i {
         font-size: 1rem;
     }
-    .card{
+
+    .card {
         width: 60%;
 
     }
-    .card img{
+
+    .card img {
         width: 60px;
         margin: 0;
         margin-right: 1rem;
