@@ -232,6 +232,51 @@ form {
     margin-left: .5rem;
 }
 
+.FAQ{
+    color: white;
+    padding: 5rem 0rem;
+}
+
+.faq-container{
+    width: 69%;
+    margin: auto;
+    
+}
+
+.faq-container h2{
+    font-size: 3rem;
+    font-family: Netflix Sans;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    font-family: Netflix Sans;
+    padding: 2rem;
+    background-color: #2D2D2D;
+    margin: .5rem 0;
+    font-size: 1.5rem;
+
+}
+
+.last-question{
+    margin-bottom: 3rem;
+}
+
+.questions:hover{
+    background-color: #414141;
+}
+
+.faq-email p{
+    font-size: 1.3rem;
+    font-family: Netflix Sans;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -258,6 +303,12 @@ form {
     .right {
         width: 50%;
     }
+
+    .faq-container{
+        width: 95%;
+        margin: auto;
+    }
+
 }
 
 @media (max-width:960px) {
@@ -334,6 +385,21 @@ form {
         margin-right: 1rem;
         margin-left: .5rem;
     }
+
+    .faq-container h2{
+        font-size: 2rem;
+        
+    }
+    
+.questions {
+    display: flex;
+    justify-content: space-between;
+    font-family: Netflix Sans;
+    padding: 1rem 2rem;
+    
+    font-size: 1rem;
+
+}
     
 }
 
