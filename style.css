@@ -299,8 +299,44 @@ form {
     margin-bottom: 1rem;
 }
 
+footer{
+    color: rgb(199, 197, 197) ;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
+.footer-box{
+    width: 69%;
+    
+    margin: auto;
+}
+.footer-box p{
+    
+    margin-bottom: 2rem;
+}
+.footer-box  a{
+    color: gray;
+    color: rgb(199, 197, 197) ;
+}
 
+.footer-link{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr );
+    grid-gap: 1rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-link a{
+    font-size: .9rem;
+}
+
+.language-singin{
+    margin-bottom: 2rem;
+}
+
+.copyright{
+    font-size: .9rem;
+}
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++ media querry are here ++++++++++++++++++++++++++++++ */
 
@@ -327,6 +363,13 @@ form {
     .faq-container {
         width: 95%;
         margin: auto;
+    }
+    .footer-box{
+        width: 95%;
+    }
+    .footer-link{
+       
+        margin-bottom: 2rem;
     }
 
 }
@@ -432,7 +475,9 @@ form {
     .right1 .img2{
         width: 100%;
     }
-
+    .footer-link{
+       grid-template-columns: repeat(2,1fr);
+    }
 }
 
 
