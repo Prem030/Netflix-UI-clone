@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+
+}
+
+
+hr {
+    color: #232323;
+    border: 4px solid #232323;
 }
 
 .btn {
@@ -37,7 +44,7 @@ header {
     height: 71vh;
     position: absolute;
     background-color: black;
-    opacity: .6;
+    opacity: .7;
     top: 0;
 }
 
@@ -111,7 +118,7 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .email {
@@ -132,11 +139,72 @@ form {
     align-items: center;
 }
 
-.get-started-btn i{
+.get-started-btn i {
     margin-left: .5rem;
 }
 
 
+.mid-box {
+    color: white;
+    padding: 5rem 0;
+    font-family: Netflix Sans;
+}
+
+.inner-box
+ {
+    display: flex;
+    flex-direction: row;
+
+    width: 60%;
+    margin: auto;
+
+}
+
+.left {
+    width: 50%;
+}
+
+.container h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1.5rem;
+    font-family: Netflix Sans;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.right img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    height: 90%;
+}
+
+.right video {
+    width: 74%;
+    position: absolute;
+    margin-top: -19px;
+
+}
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++ media querry are here ++++++++++++++++++++++++++++++ */
 
@@ -145,13 +213,28 @@ form {
         width: 100%;
     }
 
+    .inner-box
+     {
+        width: 96%;
+        margin: auto;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
 }
 
 @media (max-width:960px) {
     header {
         height: 57vh;
     }
-
+    .box{
+        height: 57vh;
+    }
     .logo {
         width: 100px;
     }
@@ -175,7 +258,46 @@ form {
     .email {
         width: 350px;
     }
+    .inner-box{
+        width: 710px;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        
+    }
+    .left{
+        width: 100%;
+
+    }
+
+    .container h2{
+        font-size: 2rem;
+    }
+
+    .container p{
+        font-size: 1rem;
+    }
+
+    .right{
+        width: 100%;
+    }
+    
+    .right img{
+        width: 670px;
+        margin: auto;
+    }
+
 }
+
+
+
+@media (max-width:800px){
+    .inner-box{
+        width: 95%;
+        margin: auto;
+    }
+}
+
 
 
 @media (max-width:700px) {
@@ -188,7 +310,7 @@ form {
         width: 100%;
         display: flex;
         padding: 0;
-        
+
     }
 
     .email {
@@ -201,23 +323,27 @@ form {
         width: 34.5%;
         font-size: 1.5rem;
         text-align: center;
-        
+
+    }
+
+    .right img{
+        width: 100%;
     }
 }
 
-@media (max-width:600px){
-    form{
+@media (max-width:600px) {
+    form {
         flex-direction: column;
         align-items: center;
     }
 
-    
-    .email{
+
+    .email {
         width: 100%;
         margin-bottom: 1rem;
     }
 
-    .get-started-btn{
+    .get-started-btn {
         font-size: 1.1rem;
         width: 170px;
         padding: 1rem;
@@ -225,7 +351,7 @@ form {
         justify-content: center;
     }
 
-    .get-started-btn i{
+    .get-started-btn i {
         font-size: 1rem;
     }
 
