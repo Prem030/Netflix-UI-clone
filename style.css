@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn {
+    background-color: #E50914;
+    color: white;
+    border: 0;
+    padding: .4rem .9rem;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.sign-in {
+    font-size: 1rem;
+}
+
+header {
+    background-image: url("assets/images/background.jpg");
+    background-size: max(1280px, 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 71vh;
+    padding-top: .9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.box {
+    width: 100%;
+    height: 71vh;
+    position: absolute;
+    background-color: black;
+    opacity: .6;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    padding: .5rem 3rem .5rem 3rem;
+
+}
+
+.logo {
+    width: 150px;
+}
+
+.language {
+    padding: .4rem .9rem .4rem .9rem;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: white;
+    text-align: center;
+    margin-right: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center
+}
+
+option {
+    color: black;
+}
+
+.heading {
+    position: relative;
+    z-index: 3;
+    color: white;
+    width: 900px;
+
+    margin: auto;
+    transform: translateY(10px);
+    text-align: center;
+    font-family: Netflix Sans;
+
+}
+
+.heading h1 {
+    font-size: 3rem;
+    font-family: Netflix Sans;
+    font-weight: 900;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+
+}
+
+.first-para {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.second-para {
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.email {
+    width: 370px;
+    background-color: rgba(0, 0, 0, 0.507);
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-right: .5rem;
+}
+
+.get-started-btn {
+    font-size: 1.5rem;
+    padding: .4rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-btn i{
+    margin-left: .5rem;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ media querry are here ++++++++++++++++++++++++++++++ */
+
+@media (max-width:1280px) {
+    nav {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:960px) {
+    header {
+        height: 57vh;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .heading {
+        width: 600px;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .first-para {
+        font-size: 1.3rem;
+    }
+
+    .second-para {
+        font-size: 1.1rem;
+    }
+
+    .email {
+        width: 350px;
+    }
+}
+
+
+@media (max-width:700px) {
+    .heading {
+        width: 95%;
+        margin: auto;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        
+    }
+
+    .email {
+        width: 65%;
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .get-started-btn {
+        width: 34.5%;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+}
+
+@media (max-width:600px){
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .email{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .get-started-btn{
+        font-size: 1.1rem;
+        width: 170px;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .get-started-btn i{
+        font-size: 1rem;
+    }
+
+}
